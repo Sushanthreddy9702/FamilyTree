@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "messages",
+      "type": "uk.trading.tribeteck.familytree.model.CreateRelationRequest",
+      "sourceType": "uk.trading.tribeteck.familytree.model.CreateRelationRequest"
+    }
+  ],
+  "properties": [
+    {
+      "name": "messages.person1",
+      "type": "uk.trading.tribeteck.familytree.model.RelationRequest",
+      "sourceType": "uk.trading.tribeteck.familytree.model.CreateRelationRequest"
+    },
+    {
+      "name": "messages.person2",
+      "type": "uk.trading.tribeteck.familytree.model.RelationRequest",
+      "sourceType": "uk.trading.tribeteck.familytree.model.CreateRelationRequest"
+    }
+  ],
+  "hints": []
+}

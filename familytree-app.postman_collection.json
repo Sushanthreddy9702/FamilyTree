@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "b2d26941-7af8-4e95-a3fb-0eca7971dfb7",
+		"name": "familytree-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13300544"
+	},
+	"item": [
+		{
+			"name": "relations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Paul\",\r\n\t\"relationType\": \"SON\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/familytree/v1/relations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"familytree",
+						"v1",
+						"relations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-relations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"person1\": {\r\n        \"name\": \"Bern\",\r\n        \"relationType\": \"husband\"\r\n    },\r\n    \"person2\": {\r\n        \"name\": \"Julia\",\r\n        \"relationType\": \"Wife\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/familytree/v1/relations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"familytree",
+						"v1",
+						"relations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clear-relations",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"person1\": {\r\n        \"name\": \"Bern\",\r\n        \"relationType\": \"husband\"\r\n    },\r\n    \"person2\": {\r\n        \"name\": \"Julia\",\r\n        \"relationType\": \"Wife\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/familytree/v1/relations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"familytree",
+						"v1",
+						"relations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
